@@ -33,11 +33,14 @@
 
   export default {
     name: 'projects',
-    data: function() {
+/*    data: function() {
       return {
         projects: []
       }
-    },
+    },*/
+    data: () => ({
+      projects: []
+    }),
     methods: {
       loadProjects: function() {
         axios
